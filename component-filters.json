@@ -15,7 +15,8 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "learning_catalog"
     ]
   },
   {
@@ -37,11 +38,6 @@
       "image",
       "button",
       "title"
-    ]
-  },
-  {
-    "id": "learning_catalog",
-    "components": [
     ]
   }
 ]
