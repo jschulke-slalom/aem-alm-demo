@@ -176,6 +176,16 @@
     ]
   },
   {
+    "id": "learning_catalog",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {

@@ -38,5 +38,10 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "learning_catalog",
+    "components": [
+    ]
   }
 ]
