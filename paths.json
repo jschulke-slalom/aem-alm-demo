@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/aem-alm-poc/:/",
-    "/content/aem-alm-poc/configuration:/.helix/config.json",
-    "/content/aem-alm-poc/metadata:/metadata.json"
+    "/content/aem-alm/:/",
+    "/content/aem-alm/configuration:/.helix/config.json",
+    "/content/aem-alm/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/aem-alm-poc/"
+    "/content/aem-alm/"
   ]
 }
