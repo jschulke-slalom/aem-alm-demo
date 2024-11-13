@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--aem-alm-poc--jschulke-slalom.aem.page/
-- Live: https://main--aem-alm-poc--jschulke-slalom.aem.live/
+- Preview: https://main--aem-alm-demo--jschulke-slalom.aem.page/
+- Live: https://main--aem-alm-demo--jschulke-slalom.aem.live/
 
 ## Installation
 
