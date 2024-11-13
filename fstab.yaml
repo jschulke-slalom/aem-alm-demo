@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p11802-e92257.adobeaemcloud.com/bin/franklin.delivery/jschulke-slalom/ame-alm-demo/main"
+    url: "https://author-p11802-e92257.adobeaemcloud.com/bin/franklin.delivery/jschulke-slalom/aem-alm-demo/main"
     type: "markup"
     suffix: ".html"
