@@ -158,7 +158,7 @@
           }
         },
         {
-          "title": "Learnin Catalog",
+          "title": "Learning Catalog",
           "id": "learning_catalog",
           "plugins": {
             "xwalk": {

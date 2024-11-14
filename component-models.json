@@ -112,22 +112,6 @@
     ]
   },
   {
-    "id": "cards",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Flip Cards",
-            "value": "flip-cards"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "card",
     "fields": [
       {
@@ -136,6 +120,13 @@
         "name": "image",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "value": ""
       },
       {
         "component": "richtext",
@@ -176,16 +167,6 @@
     ]
   },
   {
-    "id": "learning_catalog",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
-      }
-    ]
-  },
-  {
     "id": "hero",
     "fields": [
       {
@@ -208,6 +189,16 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "learning_catalog",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
       }
     ]
   }
