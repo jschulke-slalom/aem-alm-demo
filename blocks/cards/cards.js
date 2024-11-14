@@ -7,6 +7,12 @@ export default function decorate(block) {
 
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
+    // Add the "card" class to the li element
+    li.className = 'card';
+    // Add click event listener to toggle the 'flip' class
+    li.addEventListener('click', () => {
+      li.classList.toggle('flip');
+    });
     moveInstrumentation(row, li);
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
