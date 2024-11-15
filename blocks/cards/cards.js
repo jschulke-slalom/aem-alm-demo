@@ -3,10 +3,8 @@ import { moveInstrumentation } from '../../scripts/scripts.js';
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
-  console.log('Created <ul> element');
 
-  [...block.children].forEach((row, rowIndex) => {
-    console.log(`Processing row ${rowIndex}`);
+  [...block.children].forEach((row) => {
     const li = document.createElement('li');
     // Add click event listener to toggle the 'flip' class
     li.addEventListener('click', () => {
