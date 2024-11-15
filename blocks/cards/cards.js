@@ -4,27 +4,38 @@ import { moveInstrumentation } from '../../scripts/scripts.js';
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
+  console.log('Created <ul> element');
 
-  [...block.children].forEach((row) => {
+  [...block.children].forEach((row, rowIndex) => {
+    console.log(`Processing row ${rowIndex}`);
     const li = document.createElement('li');
-    // Add the "card" class to the li element
-    li.className = 'card';
     // Add click event listener to toggle the 'flip' class
     li.addEventListener('click', () => {
       li.classList.toggle('flip');
     });
     moveInstrumentation(row, li);
-    while (row.firstElementChild) li.append(row.firstElementChild);
-    [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
-      else div.className = 'cards-card-body';
+    while (row.firstElementChild) {
+      li.append(row.firstElementChild);
+      console.log('Appended child element to <li>');
+    }
+    const divs = [...li.children];
+    console.log(`Number of div children in <li>: ${divs.length}`);
+
+    divs.forEach((div, index) => {
+      if (div.children.length === 1 && div.querySelector('picture')) {
+        div.className = 'cards-card-image';
+        console.log(`Div ${index} is an image, assigned class "cards-card-image"`);
+      } else if (divs.length === 3 && index === 1) {
+        div.className = 'cards-card-title';
+        console.log(`Div ${index} is a title, assigned class "cards-card-title"`);
+      } else {
+        div.className = 'cards-card-body';
+        console.log(`Div ${index} is a body, assigned class "cards-card-body"`);
+      }
     });
+
     ul.append(li);
-  });
-  ul.querySelectorAll('picture > img').forEach((img) => {
-    const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
-    moveInstrumentation(img, optimizedPic.querySelector('img'));
-    img.closest('picture').replaceWith(optimizedPic);
+    console.log('Appended <li> to <ul>');
   });
   block.textContent = '';
   block.append(ul);

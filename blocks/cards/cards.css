@@ -25,13 +25,9 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
 .flip-cards ul {
-  li.flip {
-    transform: rotateY(180deg);
-    .cards-card-body {
-      transform: rotateY(180deg);
-    }
-  }
+
   li {
     background-color: transparent;
     height: auto;
@@ -40,9 +36,11 @@
       transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
     img {
       aspect-ratio: 4/ 4;
     }
+
     .cards-card-body, .cards-card-image {
       position: absolute;
       width: 100%;
@@ -50,12 +48,19 @@
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
     }
-    .cards-card-image {
-    }
+
     .cards-card-body {
       transform: rotateY(180deg);
       right:0;
       width: 90%;
+    }
+  }
+
+  li.flip {
+    transform: rotateY(180deg);
+ 
+    .cards-card-body {
+      transform: rotateY(180deg);
     }
   }
 }
