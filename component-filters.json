@@ -15,7 +15,9 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "login_btn",
+      "learning_catalog"
     ]
   },
   {
