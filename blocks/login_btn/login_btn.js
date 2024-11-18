@@ -1,6 +1,8 @@
 export default function decorate(block) {
-  const btn = document.createElement('button');
+  const [loginWrapper] = block.children;
+
+  const btn = document.createElement('div');
   btn.classList = 'login-btn';
   block.textContent = 'Login';
-  block.append(btn);
+  loginWrapper.replaceChildren(btn);
 }

@@ -193,6 +193,18 @@
     ]
   },
   {
+    "id": "login_btn",
+    "fields": [
+       {
+         "component": "text",
+         "valueType": "string",
+         "name": "btn_text",
+         "label": "Button Text",
+         "value": ""
+       }
+     ]
+  },
+  {
     "id": "learning_catalog",
     "fields": [
       {
