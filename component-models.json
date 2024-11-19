@@ -193,7 +193,7 @@
     ]
   },
   {
-    "id": "learning_catalog",
+    "id": "learning-catalog",
     "fields": [
       {
         "component": "aem-content",
