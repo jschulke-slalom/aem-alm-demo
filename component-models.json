@@ -201,5 +201,12 @@
         "label": "Reference"
       }
     ]
+  },
+  {
+    "id": "login-button",
+    "fields": [
+      {
+      }
+    ]
   }
 ]
